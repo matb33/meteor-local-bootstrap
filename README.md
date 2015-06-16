@@ -17,15 +17,16 @@ to work.
 
 ## Usage
 
-1.  Copy this package (`local-bootstrap3`) into your app's `packages/` folder
-    (create the `packages/` folder if you don't already have one);
+1.  Clone this repo into your app's packages folder as
+    `packages/local-bootstrap3/` (create the `packages/` folder if you don't
+    already have one);
 
 2.  Create a local package (eg. `app-bootstrap`, so: `packages/app-bootstrap/`).
-    Create at least the 3 files found below. You can add other files at will,
+    Create at least the 3 files found below. You can add other files later on,
     such as themes (see inline comments for examples);
 
 3.  Add this package to your app (`meteor add app-bootstrap`). You don't need
-    to explicitly add `local-bootstrap3` -- `app-bootstrap` pulls it in
+    to explicitly add `local-bootstrap3` -- `app-bootstrap` will pull it in
     automatically.
 
 ## Files to create under `packages/app-bootstrap/`
@@ -34,7 +35,7 @@ to work.
 
 ```javascript
 Package.describe({
-  summary: 'App instantiation of Bootstrap',
+  summary: 'Bootstrap 3.3.4 app-specific configuration package',
   version: '1.0.0'
 });
 
@@ -55,7 +56,7 @@ Package.onUse(function (api) {
 --- variables.less -------------------------------------------------------------
 
 ```less
-// Add further customizations of variables here:
+// Customize Bootstrap variables here:
 @icon-font-path: "/packages/local-bootstrap3/fonts/";
 ```
 
@@ -132,8 +133,6 @@ Package.onUse(function (api) {
 // "Superhero" theme by https://bootswatch.com/
 // @import "superhero/variables.less";
 // @import "superhero/bootswatch.less";
-
-// OVERRIDE BOOTSTRAP VARIABLES FOR YOUR APP:
 
 @import "variables.less";
 ```
