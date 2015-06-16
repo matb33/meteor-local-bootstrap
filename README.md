@@ -15,6 +15,13 @@ pull from a sibling local package. This seems wrong in principle, but it works.
 Taking advantage of this "feature" is what allows this simple package technique
 to work.
 
+Additionally, better options are coming once cross-package LESS imports are
+officially supported by Meteor. One of these, the [Meteor Bootstrap
+package-collection](https://github.com/matb33/meteor-bootstrap) by yours truly,
+fully leverages the Meteor package dependency system to allow the developer to
+load the bare minimum Bootstrap functionality that they require for their app.
+Stay tuned for that one!
+
 ## Usage
 
 1.  [Download this repo](https://github.com/matb33/meteor-local-bootstrap/archive/master.zip)
