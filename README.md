@@ -17,9 +17,9 @@ to work.
 
 ## Usage
 
-1.  Clone this repo into your app's packages folder as
-    `packages/local-bootstrap3/` (create the `packages/` folder if you don't
-    already have one);
+1.  [Download this repo](https://github.com/matb33/meteor-local-bootstrap/archive/master.zip)
+    and extract into your app's packages folder as `packages/local-bootstrap3/`
+    (create the `packages/` folder if you don't already have one);
 
 2.  Create a local package (eg. `app-bootstrap`, so: `packages/app-bootstrap/`).
     Create at least the 3 files found below. You can add other files later on,
