@@ -11,9 +11,9 @@ nearby for you to hack on (as opposed to a read-only Atmosphere package).
 
 It may or may not be fragile. The local package you need to create in order to
 decide which parts of Bootstrap you want for your app relies on being able to
-pull from a sibling local package. This seems wrong in principle, but it works.
-Taking advantage of this "feature" is what allows this simple package technique
-to work.
+reference files directly from a sibling local package. This seems wrong in
+principle, but it works. Taking advantage of this "feature" is what allows this
+simple package technique to work.
 
 Additionally, better options are coming once cross-package LESS imports are
 officially supported by Meteor. One of these, the [Meteor Bootstrap
